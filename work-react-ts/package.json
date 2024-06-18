@@ -1,0 +1,41 @@
+{
+  "name": "vite-react-typescript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "debug": "cross-env currentEnv=debug vite --host",
+    "dev": "cross-env currentEnv=dev vite --host",
+    "build:dev": "cross-env currentEnv=dev   tsc -b && vite build ",
+    "build:test": "cross-env currentEnv=test tsc -b && vite build ",
+    "build:pre": "cross-env currentEnv=pre   tsc -b && vite build ",
+    "build:pro": "cross-env currentEnv=pro   tsc -b && vite build ",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.4",
+    "@umijs/lint": "^4.2.11",
+    "ahooks": "^3.8.0",
+    "antd": "^5.18.2",
+    "axios": "^1.7.2",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.11",
+    "less": "^4.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.13"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "esnext"],
+    "target": "es2015",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types", "global.d.ts"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "global.d.ts",
+    "typings/**/*",
+
+    "vite.config.ts",
+    "typings.d.ts",
+
+    "config/**.ts",
+    "config/**.js",
+
+    // "src/*.ts",
+    // "src/*.js",
+    // "src/*.tsx",
+    // "src/*.js",
+    // "src/*.jsx",
+    // "src/*.vue",
+
+    // "src/**/*.d.ts",
+
+    // "src/**/*.tsx",
+    // "src/**/*.js",
+    // "src/**/*.jsx",
+    // "src/**/*.vue",
+    
+    "src/**/*",
+  ],
+  "exclude": ["node_modules", ".vscode-test"],
+  "compileOnSave": false
+}

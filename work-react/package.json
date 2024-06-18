@@ -1,0 +1,38 @@
+{
+  "name": "vite-react-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "debug": "cross-env currentEnv=debug vite --host",
+    "dev": "cross-env currentEnv=dev vite --host",
+    "build:dev": "cross-env currentEnv=dev   vite build ",
+    "build:test": "cross-env currentEnv=test vite build ",
+    "build:pre": "cross-env currentEnv=pre   vite build ",
+    "build:pro": "cross-env currentEnv=pro   vite build ",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.4",
+    "@umijs/lint": "^4.2.11",
+    "ahooks": "^3.8.0",
+    "antd": "^5.18.2",
+    "axios": "^1.7.2",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.11",
+    "less": "^4.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "vite": "^5.2.13"
+  }
+}
