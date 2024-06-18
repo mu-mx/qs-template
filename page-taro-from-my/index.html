@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 20px; font-size: 5.33333vw">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title></title>
+    <!--#include virtual="/sinclude/common/head_meta.shtml" -->
+    <script>
+      window._PFM_TIMING = [['', new Date()]]
+    </script>
+    <!--#include virtual="/sinclude/common/gb.include.html"-->
+    <style>
+      .wx_footer {
+        display: none;
+      }
+      /* react报错蒙层 */
+      #react-refresh-overlay {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.files.css[0] %>" />
+  </head>
+
+  <script type="text/javascript">
+    window._PFM_TIMING[1] = new Date()
+  </script>
+
+  <!-- 注：加ontouchstart使css：active生效 -->
+  <body ontouchstart="">
+    <!--#include virtual="/sinclude/common/head_inc.shtml"-->
+    <!--#include virtual="/sinclude/common/head_shortcut.shtml"-->
+    <!--#include virtual="/sinclude/update/wx/2020/4/font-bigger.shtml"-->
+    <!--#include virtual="/sinclude/promote/snsshare.html"-->
+    <div id="app"></div>
+
+    <script type="text/javascript">
+      window._PFM_TIMING[2] = new Date()
+      // window.GLOBAL_PGJSSDK_HIDESHAREBTN = true // 隐藏app分享按钮
+    </script>
+
+    <script type="text/javascript" src="https://wq.360buyimg.com/data/ppms/others/react.dom.min.js"></script>
+    <script src="<%= htmlWebpackPlugin.files.js[0] %>" params="{noCompile:true}"></script>
+
+    <script type="text/javascript">
+      window._PFM_TIMING[3] = new Date()
+    </script>
+    <!--#include virtual="/sinclude/common/spdtimming_foot.shtml"-->
+    <!--#include virtual="/sinclude/common/foot.shtml"-->
+  </body>
+</html>

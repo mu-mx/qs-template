@@ -1,0 +1,28 @@
+.page {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  font-size: 24px;
+  color: #666;
+
+  /* page bottom placeholder */
+  &:after {
+    content: '';
+    display: block;
+    height: 60px;
+  }
+
+  :global {
+    .taro-scroll-view__scroll-y,
+    .taro-scroll-view__scroll-x {
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
+
+.skeleton {
+  height: 100vh;
+  background-image: url(https://img10.360buyimg.com/img/jfs/t1/91177/20/23854/16147/620e6764E7982ff31/8d238b7ac05c722d.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #fff;
+}

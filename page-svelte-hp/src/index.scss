@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "JingDongLangZhengTi";
+    src: url('//storage.360buyimg.com/wxsq-oss-cube-mis/JDLANGZHENGTI_REGULAR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 20px;
+    font-size: 5.33333vw;
+}
+@media screen and (max-width: 320px) {
+    html {
+        font-size:17.06667px
+    }
+}
+@media screen and (min-width: 540px) {
+    html {
+        font-size:28.8px
+    }
+}
+@media screen and (min-width: 768px) {
+    html {
+        font-size:40.96px
+    }
+}
+@media screen and (min-width: 1024px) {
+    html {
+        font-size:54.61333px
+    }
+}
+@media screen and (min-width: 1536px) {
+    html {
+        font-size:51.92px;
+    }
+}
+.qq_footer, .wx_footer {
+    display: none;
+}

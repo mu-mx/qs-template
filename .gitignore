@@ -1,0 +1,10 @@
+out
+dist
+node_modules
+.vscode-test/
+.eslintcache
+.idea/
+.temp/
+.DS_Store
+.history
+.vscode/launch.json

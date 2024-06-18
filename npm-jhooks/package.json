@@ -1,0 +1,15 @@
+{
+  "name": "@jhooks/useHiTemplate",
+  "version": "1.0.0",
+  "description": "组件说明",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build:ts": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}

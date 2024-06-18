@@ -1,0 +1,31 @@
+{
+  "name": "@base/HiTemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "tsc",
+    "lint": "eslint --ext .ts . --ignore-pattern 'dist' --ignore-pattern '__tests__'",
+    "test": "npm run test:types & npm run lint",
+    "test:types": "tsc --noEmit && tsd"
+  },
+  "devDependencies": {
+    "tsd": "^0.19.0"
+  },
+  "tsd": {
+    "directory": "__tests__",
+    "include": [
+      "__tests__/*.ts/"
+    ]
+  },
+  "keywords": [
+    "HiTemplate"
+  ],
+  "author": "[erp]",
+  "license": "ISC"
+}
